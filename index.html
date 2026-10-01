@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DCM Information Service</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+
+<header class="header">
+
+  <div class="brand">
+
+    <div class="logo">
+      <img src="assets/dcm-logo.svg" alt="DCM Logo">
+    </div>
+
+    <div class="header-info">
+      <h1>DCM Information Service</h1>
+      <p>
+        ระบบให้ข้อมูลหลักสูตร Digital Content and Media
+      </p>
+    </div>
+
+    <div class="header-actions">
+
+      <div class="status">
+        <span></span>
+        Online
+      </div>
+
+      <button
+        type="button"
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="เปลี่ยนธีม"
+        title="เปลี่ยนธีม"
+      >
+        🌙
+      </button>
+
+      <button
+        type="button"
+        class="faq-toggle"
+        id="faqToggle"
+        aria-label="เปิดคำถามที่พบบ่อย"
+        title="คำถามที่พบบ่อย"
+        aria-expanded="false"
+      >
+        ❓
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<section class="chat" id="chat">
+
+  <div class="welcome">
+
+    <div class="welcome-icon">
+      <img
+        src="assets/dcm-logo.svg"
+        alt="DCM Logo"
+      >
+    </div>
+
+    <h2>
+      สวัสดีครับ 👋
+    </h2>
+
+    <p>
+      ผมคือ DCM Assistant
+      สามารถช่วยตอบข้อมูลเบื้องต้นเกี่ยวกับหลักสูตร
+      Digital Content and Media ได้ครับ
+    </p>
+
+  </div>
+
+
+  <div class="message bot">
+
+    <div class="avatar">
+      <img
+        src="assets/dcm-logo.svg"
+        alt="DCM Logo"
+      >
+    </div>
+
+    <div class="bubble">
+
+      <strong>
+        DCM Assistant
+      </strong>
+
+      <p>
+        สามารถสอบถามเกี่ยวกับหลักสูตร วิชาเรียน
+        อาชีพหลังจบ การเรียน และข้อมูลทั่วไปเกี่ยวกับ DCM ได้เลยครับ
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  class="faq-section"
+  id="faqSection"
+>
+
+  <div class="section-heading">
+
+    <div>
+
+      <span class="section-label">
+        FAQ
+      </span>
+
+      <h2>
+        คำถามที่พบบ่อย
+      </h2>
+
+      <p>
+        เลือกหมวดหมู่เพื่อดูคำถามที่พบบ่อย
+      </p>
+
+    </div>
+
+    <button
+      type="button"
+      class="faq-close"
+      id="faqClose"
+      aria-label="ปิด FAQ"
+    >
+      ×
+    </button>
+
+  </div>
+
+
+  <div class="category-grid">
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="curriculum"
+    >
+      <span class="category-icon">📚</span>
+
+      <span class="category-content">
+        <strong>หลักสูตร</strong>
+        <small>3 คำถาม</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="subjects"
+    >
+      <span class="category-icon">📖</span>
+
+      <span class="category-content">
+        <strong>วิชาเรียน</strong>
+        <small>4 คำถาม</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="career"
+    >
+      <span class="category-icon">💼</span>
+
+      <span class="category-content">
+        <strong>อาชีพ</strong>
+        <small>4 คำถาม</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="study"
+    >
+      <span class="category-icon">🎓</span>
+
+      <span class="category-content">
+        <strong>การเรียน</strong>
+        <small>4 คำถาม</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="suitability"
+    >
+      <span class="category-icon">🎯</span>
+
+      <span class="category-content">
+        <strong>ความเหมาะสม</strong>
+        <small>3 คำถาม</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="contact"
+    >
+      <span class="category-icon">📞</span>
+
+      <span class="category-content">
+        <strong>ติดต่อ</strong>
+        <small>3 ช่องทาง</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="greeting"
+    >
+      <span class="category-icon">👋</span>
+
+      <span class="category-content">
+        <strong>ทักทาย</strong>
+        <small>2 คำถาม</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+
+    <button
+      type="button"
+      class="category-card"
+      data-category="other"
+    >
+      <span class="category-icon">❓</span>
+
+      <span class="category-content">
+        <strong>คำถามอื่น ๆ</strong>
+        <small>คำถามทั่วไป</small>
+      </span>
+
+      <span class="category-arrow">›</span>
+    </button>
+
+  </div>
+
+
+  <div
+    class="question-panel"
+    id="questionPanel"
+  >
+
+    <div class="question-panel-header">
+
+      <div>
+
+        <span class="section-label">
+          Questions
+        </span>
+
+        <h3 id="questionPanelTitle">
+          เลือกคำถาม
+        </h3>
+
+      </div>
+
+      <button
+        type="button"
+        class="close-button"
+        id="closeQuestions"
+        aria-label="ปิด"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <div
+      class="question-list"
+      id="questionList"
+    ></div>
+
+  </div>
+
+</section>
+
+
+<form
+  class="input-area"
+  id="chatForm"
+>
+
+  <div class="input-wrapper">
+
+    <span class="input-icon">
+      ⌕
+    </span>
+
+    <input
+      type="text"
+      id="question"
+      placeholder="พิมพ์คำถามเกี่ยวกับ DCM..."
+      autocomplete="off"
+    >
+
+  </div>
+
+  <button
+    type="submit"
+    id="sendButton"
+  >
+    <span>ส่ง</span>
+    <span class="send-icon">➜</span>
+  </button>
+
+</form>
+
+
+<footer>
+
+  <span>
+    DCM Information Service
+  </span>
+
+  <span class="footer-dot">
+    •
+  </span>
+
+  <span>
+    Powered by <b>n8n</b>
+  </span>
+
+</footer>
+
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
