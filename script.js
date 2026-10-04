@@ -1,5 +1,5 @@
 const N8N_WEBHOOK =
-  "https://eclipse-lyric-were-inner.trycloudflare.com/webhook/dcm-service"; 
+  "https://sunkrabv.app.n8n.cloud/webhook/dcm-service"; 
 
 const form = document.getElementById("chatForm");
 const input = document.getElementById("question");
